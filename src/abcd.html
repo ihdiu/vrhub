@@ -1,29 +1,37 @@
 <!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=account_circle" />
     <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!-- Header Section -->
     <header>
         <div class="head">
-            <div class="menu-icon"><img src="#" alt="logo.png"></div>
+            <div class="menu-icon"><img src="/assets/logo.png" alt="logo.png"></div>
             <div class="top-nav">
-                <button>Get App</button>
+
+                <button><i class="fa fa-download" aria-hidden="true"></i> Get App</button>
                 <input type="text" placeholder="Search..">
-                <a href="#">Home</a>
-                <a href="#">Price</a>
-                <a href="#">Services</a>
+                <a href="#" class="head-link">Home</a>
+                <a href="#" class="head-link">Price</a>
+                <a href="#" class="head-link">Services</a>
             </div>
             <div class="profile">
-                <a href="#"><img src="#" alt="drd"></a>
+                <span class="material-symbols-outlined">
+                    account_circle
+                </span>
             </div>
         </div>
     </header>
@@ -64,7 +72,7 @@
                 </div>
             </div>
             <div class="item">
-                <img src="/assets/11.jpg">
+                <img src="/assets/12.jpg">
                 <div class="content">
                     <div class="author">LUNDEV</div>
                     <div class="title">DESIGN SLIDER</div>
@@ -93,65 +101,84 @@
 
                 </div>
             </div>
-        </div>
-        <div class="thumbnail">
-            <!-- Thumbnail items here (same as original) -->
-            
             <div class="item">
-                <img src="/assets/8.jpg">
+                <img src="/assets/9.jpg">
                 <div class="content">
-                    <div class="title">
-                        Name Slider
+                    <div class="author">LUNDEV</div>
+                    <div class="title">DESIGN SLIDER</div>
+                    <div class="topic">vrtour</div>
+                    <div class="des">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt
+                        minima
+                        placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et
+                        quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at
+                        laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
                     </div>
-                    <div class="description">
-                        Description
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <img src="/assets/8.jpg">
-                <div class="content">
-                    <div class="title">
-                        Name Slider
-                    </div>
-                    <div class="description">
-                        Description
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <img src="/assets/5.jpeg">
-                <div class="content">
-                    <div class="title">
-                        Name Slider
-                    </div>
-                    <div class="description">
-                        Description
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <img src="/assets/6.jpg">
-                <div class="content">
-                    <div class="title">
-                        Name Slider
-                    </div>
-                    <div class="description">
-                        Description
-                    </div>
+
                 </div>
             </div>
         </div>
-        <div class="arrows">
-            <button id="prev"></button>
-            <button id="next"> > </button>
+    </div>
+    <div class="thumbnail">
+        <!-- Thumbnail items here (same as original) -->
+
+        <div class="item">
+            <img src="/assets/8.jpg">
+            <div class="content">
+                <div class="title">
+                    Name Slider
+                </div>
+                <div class="description">
+                    Description
+                </div>
+            </div>
         </div>
-        <div class="time"></div>
+        <div class="item">
+            <img src="/assets/8.jpg">
+            <div class="content">
+                <div class="title">
+                    Name Slider
+                </div>
+                <div class="description">
+                    Description
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="/assets/5.jpeg">
+            <div class="content">
+                <div class="title">
+                    Name Slider
+                </div>
+                <div class="description">
+                    Description
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="/assets/6.jpg">
+            <div class="content">
+                <div class="title">
+                    Name Slider
+                </div>
+                <div class="description">
+                    Description
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="arrows">
+        <button id="prev"> <- </button>
+                <button id="next"> -> </button>
+    </div>
+    <div class="time"></div>
     </div>
 
     <!-- Packages Section -->
     <div class="bodyContainer">
-        <div class="h2"><h2>Our Packages</h2></div>
+        <div class="h2">
+            <h2>Our Packages</h2>
+        </div>
         <div class="packageContainer">
             <div class="pack1">
                 <h3>Basic</h3>
@@ -173,7 +200,9 @@
             </div>
         </div>
 
-        <div class="pk2"><h2>All plans include</h2></div>
+        <div class="pk2">
+            <h2>All plans include</h2>
+        </div>
         <div class="packageContainer2">
             <div class="pack1">
                 <h3>Scheduling</h3>
@@ -204,39 +233,47 @@
     </div>
 
     <!-- Pricing Cards -->
-    <div class="pricing_card">
-        <!-- Pricing cards content here (same as original) -->
-        <div class="card_basic" onclick="setActive(this)">
-            <h2>Basic</h2>
-            <div class="price">€8.25/month</div>
-            <div class="features">
-                <p>Basic features</p>
-                <p>Limited access</p>
-                <p>Email support</p>
-            </div>
-            <button class="buy-btn">Buy</button>
-        </div>
+    <div class="findCard">
+        <h2 class="choose">Don't know which plan to choose?</h2>
+        <h3 class="tt">Try our Subscription plan quiz and find it out</h3>
+        <button class="bbuy-btn">Find it Out</button>
+        <div class="pricing_card">
+            <!-- Pricing cards content here (same as original) -->
+            <div class="card_basic" onclick="setActive(this)">
+                <h2>Basic</h2>
+                <div class="price">€8.25/month</div>
+                <button class="buy-btn">Buy</button>
+                <div class="features">
+                    <p>Basic features</p>
+                    <p>Limited access</p>
+                    <p>Email support</p>
+                </div>
 
-        <div class="card_standard active" onclick="setActive(this)">
-            <h2>Standard</h2>
-            <div class="price">€24.25/month</div>
-            <div class="features">
-                <p>All basic features</p>
-                <p>Full access</p>
-                <p>Priority support</p>
             </div>
-            <button class="buy-btn">Buy</button>
-        </div>
 
-        <div class="card_premium" onclick="setActive(this)">
-            <h2>Premium</h2>
-            <div class="price">€49.25/month</div>
-            <div class="features">
-                <p>All standard features</p>
-                <p>Premium access</p>
-                <p>24/7 support</p>
+            <div class="card_standard active" onclick="setActive(this)">
+                <h2>Standard</h2>
+                <div class="price">€24.25/month</div>
+                <button class="buy-btn">Buy</button>
+                <div class="features">
+                    <p>All basic features</p>
+                    <p>Full access</p>
+                    <p>Priority support</p>
+                </div>
+
             </div>
-            <button class="buy-btn">Buy</button>
+
+            <div class="card_premium" onclick="setActive(this)">
+                <h2>Premium</h2>
+                <div class="price">€49.25/month</div>
+                <button class="buy-btn">Buy</button>
+                <div class="features">
+                    <p>All standard features</p>
+                    <p>Premium access</p>
+                    <p>24/7 support</p>
+                </div>
+
+            </div>
         </div>
     </div>
 
@@ -291,8 +328,8 @@
             </div>
 
             <div class="footer-section">
-                <h3><b>Explore Website</b></h3>
-                <ul>
+                <h3 class="ew"><b>Explore Website</b></h3>
+                <ul class="x">
                     <li><a href="#">Listing property</a></li>
                     <li><a href="#">Book with confidence</a></li>
                     <li><a href="#">Trust & Safety</a></li>
@@ -335,4 +372,5 @@
         crossorigin="anonymous"></script>
     <script src="app.js"></script>
 </body>
+
 </html>
